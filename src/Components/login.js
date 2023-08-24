@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./navbar";
 
-
 const Login = () => {
   const [login, setLogin] = useState(true);
   const [signUp, setSignUp] = useState(false);
@@ -16,7 +15,7 @@ const Login = () => {
   };
   return (
     <div>
-        <Navbar />
+      <Navbar />
       {login && (
         <div className="container">
           <div className="row">
@@ -39,7 +38,7 @@ const Login = () => {
                   <label htmlFor="psw">Password</label>
                   <input
                     type="password"
-                    id="fpsw"
+                    id="psw"
                     placeholder="*******"
                     className="form-control"
                     required
@@ -54,7 +53,10 @@ const Login = () => {
                         value=""
                         id="form2Example31"
                       />
-                      <label className="form-check-label" htmlFor="form2Example31">
+                      <label
+                        className="form-check-label"
+                        htmlFor="form2Example31"
+                      >
                         {" "}
                         Remember me{" "}
                       </label>
@@ -65,15 +67,15 @@ const Login = () => {
                     <a href="/">Forgot password?</a>
                   </div>
                 </div>
-                <button
-                  className="btn btn-primary btn-block form-control"
-                  
-                >
-                  Log in
+                <button className="btn btn-primary btn-block form-control">
+                  Login
                 </button>
                 <div className="text-center mt-4">
                   <p>
-                    Not a member? <a href="/"onClick={handleShowSignUp}>Register</a>
+                    Not a member?{" "}
+                    <a href="#!" onClick={handleShowSignUp}>
+                      Register
+                    </a>
                   </p>
                 </div>
               </form>
@@ -85,14 +87,13 @@ const Login = () => {
       )}
       {signUp && (
         <div className="container mt-5">
-          
           <div className="row">
             <div className="col-md-4"></div>
 
             <div className="col-md-4">
               <form>
                 <div className=" mb-4">
-                <h1 className="text-center">Register</h1>
+                  <h1 className="text-center">Register</h1>
                   <label className="form-label" htmlFor="registerName">
                     Full Name
                   </label>
@@ -163,7 +164,10 @@ const Login = () => {
          </label>
        </div>  */}
 
-                <button className="btn btn-primary btn-block form-control mb-3" onClick={handleShowLogin}>
+                <button
+                  className="btn btn-primary btn-block form-control mb-3"
+                  onClick={handleShowLogin}
+                >
                   Sign up
                 </button>
               </form>

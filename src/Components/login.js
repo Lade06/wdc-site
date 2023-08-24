@@ -62,7 +62,7 @@ const Login = () => {
                   </div>
 
                   <div className="col">
-                    <a href="#!">Forgot password?</a>
+                    <a href="http://localhost:3000">Forgot password?</a>
                   </div>
                 </div>
                 <button
@@ -73,7 +73,7 @@ const Login = () => {
                 </button>
                 <div className="text-center mt-4">
                   <p>
-                    Not a member? <a href="#!"onClick={handleShowSignUp}>Register</a>
+                    Not a member? <a href="http://localhost:3000"onClick={handleShowSignUp}>Register</a>
                   </p>
                 </div>
               </form>

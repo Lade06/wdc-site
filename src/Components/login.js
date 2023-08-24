@@ -47,7 +47,11 @@ const Login = () => {
                 <div>
                   <p>
                     Don't have an email? Create one{" "}
-                    <a href="https://www.gmail.com" target="_blank">
+                    <a
+                      href="https://www.gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       here
                     </a>
                   </p>
@@ -156,7 +160,7 @@ const Login = () => {
                   >
                     Repeat password
                   </label>
-                  
+
                   <input
                     type="password"
                     id="registerRepeatPassword"
@@ -165,7 +169,16 @@ const Login = () => {
                   />
                 </div>
                 <div>
-                    <p>Don't have an email? Create one <a href="https://www.gmail.com" target="_blank">here</a></p>
+                  <p>
+                    Don't have an email? Create one{" "}
+                    <a
+                      href="https://www.gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      here
+                    </a>
+                  </p>
                 </div>
 
                 {/* <div className="form-check d-flex justify-content-center mb-4">

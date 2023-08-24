@@ -33,7 +33,7 @@ const Navbar = () => {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="http://localhost:3000"
                   id="navbarDropdown"
                   role="button"
                   data-mdb-toggle="dropdown"
@@ -74,7 +74,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Contact</a>
+                <a className="nav-link" href="http://localhost:3000">Contact</a>
               </li>
             </ul>
           </div>

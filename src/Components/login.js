@@ -44,6 +44,14 @@ const Login = () => {
                     required
                   />
                 </div>
+                <div>
+                  <p>
+                    Don't have an email? Create one{" "}
+                    <a href="https://www.gmail.com" target="_blank">
+                      here
+                    </a>
+                  </p>
+                </div>
                 <div className="row mb-4">
                   <div className="col d-flex justify-content-center">
                     <div className="form-check">
@@ -72,7 +80,7 @@ const Login = () => {
                 </button>
                 <div className="text-center mt-4">
                   <p>
-                    Not a member?{" "}
+                    Don't have an account?{" "}
                     <a href="#!" onClick={handleShowSignUp}>
                       Register
                     </a>
@@ -148,12 +156,16 @@ const Login = () => {
                   >
                     Repeat password
                   </label>
+                  
                   <input
                     type="password"
                     id="registerRepeatPassword"
                     className="form-control"
                     required
                   />
+                </div>
+                <div>
+                    <p>Don't have an email? Create one <a href="https://www.gmail.com" target="_blank">here</a></p>
                 </div>
 
                 {/* <div className="form-check d-flex justify-content-center mb-4">
@@ -170,6 +182,14 @@ const Login = () => {
                 >
                   Sign up
                 </button>
+                <div className="text-center mt-4">
+                  <p>
+                    Already a member?{" "}
+                    <a href="#!" onClick={handleShowLogin}>
+                      Login
+                    </a>
+                  </p>
+                </div>
               </form>
             </div>
 

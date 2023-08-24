@@ -23,7 +23,7 @@ const Login = () => {
 
             <div className="col-md-4 mt-5">
               <form>
-                <h1>Welcome To WDC</h1>
+                <h1 className="text-center">Welcome To WDC</h1>
                 <div className="mb-4">
                   <label htmlFor="emailaddress">Email </label>
                   <input

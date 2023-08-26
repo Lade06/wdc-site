@@ -1,34 +1,53 @@
 import React, { useState } from "react";
 // import Navbar from "../Components/navbar";
+import "./login.css";
 import code from "../Assets/code.jpeg";
 import sewing from "../Assets/sewing.jpg";
 import hair from "../Assets/hair.jpeg";
 import laglogo from "../Assets/lagos-logo.png";
+import student from "../Assets/Student-1-modified.png";
+import Footer from "../Components/footer";
+
+
+
 
 const Login = () => {
   const [login, setLogin] = useState(false);
   const [signUp, setSignUp] = useState(false);
   const [homePage, setHomePage] = useState(true);
+  const [dashBoard, setDashBoard] = useState(false);
 
   const handleShowLogin = () => {
     setLogin(true);
     setSignUp(false);
     setHomePage(false);
+    setDashBoard(false);
   };
   const handleShowSignUp = () => {
     setLogin(false);
     setSignUp(true);
     setHomePage(false);
+    setDashBoard(false);
   };
   const handleShowHomePage = () => {
-    setLogin(false);
     setHomePage(true);
+    setDashBoard(false);
+    setLogin(false);
+    setSignUp(false);
+    
+  };
+  const handleShowDashBoard = () => {
+    setDashBoard(true);
+    setHomePage(false);
+    setLogin(false);
+    setSignUp(false);
+    
   };
   return (
     <div>
       {/* <Navbar /> */}
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -120,6 +139,7 @@ const Login = () => {
 
       {homePage && (
         <div className="container">
+        
           <div className="row">
             <div className="col-md-6 mt-5">
               <img src={laglogo} alt="" width={"100%"} />
@@ -134,15 +154,50 @@ const Login = () => {
           <div className="row">
             <div className="col-md-4 mt-5">
               <img src={sewing} alt="" width={"100%"} />
+              <p>Fashion Design</p>
             </div>
             <div className="col-md-4 mt-5">
               <img src={code} alt="" width={"100%"} />
+              <p>Computer Operation</p>
             </div>
             <div className="col-md-4 mt-5">
               <img src={hair} alt="" width={"100%"} />
+              <p>Hair Dressing</p>
             </div>
           </div>
         </div>
+      )}
+      
+      {dashBoard && (
+        <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+          <h1 className="text-center mt-5">Dashboard</h1>
+          </div>
+          <div className="col-md-6 mt-5">
+            
+            <div className="row">
+              <div className="col-md-6"> <img src={student} alt="" width={"40%"} className="img-student"/></div>
+              <div className="col-md-6"><p>Name: Ayomide Ayomide <br />Student No: LASG/WDC/CTO/22/23</p>
+            </div>
+
+            </div>
+{/* 
+            <table cellSpacing="5">
+              <tr>
+                <td><img src={student} alt="" width={"40%"} className="img-student"/></td>
+                <td><p>Name: Ayomide Ayomide <br />Student No: LASG/WDC/CTO/22/23</p></td>
+              </tr>
+            </table> */}
+        
+          </div>
+         
+
+          <div className="col-md-6"></div>
+        </div>
+       
+      </div>
+      
       )}
 
       {login && (
@@ -210,7 +265,7 @@ const Login = () => {
                 </div>
                 <button
                   className="btn btn-primary btn-block form-control"
-                  onClick={handleShowHomePage}
+                  onClick={handleShowDashBoard}
                 >
                   Login
                 </button>
@@ -323,7 +378,7 @@ const Login = () => {
 
                 <button
                   className="btn btn-primary btn-block form-control mb-3"
-                  onClick={handleShowLogin}
+                  onClick={handleShowHomePage}
                 >
                   Sign up
                 </button>
@@ -342,6 +397,7 @@ const Login = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

@@ -8,18 +8,20 @@ const DashBoard = () => {
           <div className="col-md-12">
             <h1 className="text-center mt-5">Dashboard</h1>
           </div>
-          <div className="d-flex">
+          <div className="d-flex gap-4 mt-5">
           <img
                   src={student}
                   alt=""
-                  width={"40%"}
+                  width={"100px"}
                   className="img-student"
                 />
                 
-                <p>
-                  Name: Ayomide Ayomide <br />
-                  Student No: LASG/WDC/CTO/22/23
+                <p >
+                  Name: <b>Ayomide Ayomide</b> <br />
+                  Student No: LASG/WDC/CTO/22/23 <br />
+                  Grade:
                 </p>
+                
           </div>
           {/* <div className="col-md-6 mt-5">
             <div className="row">

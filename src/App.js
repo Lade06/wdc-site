@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/home';
 import Login from './pages/login';
 import DashBoard from './pages/dashBoard';
+import SignUp from './pages/signup';
 // import Login from './pages/login';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           {/* <Route index element={<DashBoard />} /> */}
           <Route path="login" element={<Login />} />
           <Route path="dashboard" element={<DashBoard />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="signup" element={<SignUp />} />
       </Routes>
      </BrowserRouter>
     

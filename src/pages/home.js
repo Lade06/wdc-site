@@ -2,7 +2,7 @@ import React from "react";
 import code from "../Assets/code.jpeg";
 import sewing from "../Assets/sewing.jpg";
 import hair from "../Assets/hair.jpeg";
-import laglogo from "../Assets/lagos-logo.png";
+// import laglogo from "../Assets/lagos-logo.png";
 import Navbar from "../Components/navbar";
 import Footer from "../Components/footer";
 
@@ -12,16 +12,22 @@ const Home = () => {
         <Navbar />
       <div className="container">
         <div className="row">
+          <div className="col-md-12 text-center mt-5">
+           <h1>WOMEN DEVELOPMENT CENTRE</h1>
+           <h6>Ministry Of Women Affairs & Poverty Alleviation</h6>
+          </div>
+        </div>
+        {/* <div className="row">
           <div className="col-md-6 mt-5">
             <img src={laglogo} alt="" width={"100%"} />
           </div>
           <div className="col-md-6 mt-5">
-            <h1>
+            <h1 className="text-danger">
               Welcome To <br /> WOMEN DEVELOMENT CENTRE AGEGE
             </h1>
             <h2>Ministry Of Women Affairs & Poverty Alleviation</h2>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="col-md-4 mt-5">
             <img src={sewing} alt="" width={"100%"} />

@@ -6,8 +6,11 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const navigate = useNavigate()
-    const handleSowLogin = () => {
+    const handleShowLogin = () => {
         navigate('/login')
+    }  
+    const handleShowSignUp = () => {
+        navigate('/signup')
     }  
     
   return (
@@ -90,7 +93,7 @@ const Navbar = () => {
               <li className="nav-item login-signup">
                   <button
                     className="btn btn-primary"
-                    onClick={handleSowLogin}
+                    onClick={handleShowLogin}
                     
                   >
                     Login
@@ -99,6 +102,7 @@ const Navbar = () => {
               <li className="nav-item login-signup btn-signup mx-3">
                 <button
                   className="btn"
+                  onClick={handleShowSignUp}
                   
                 >
                   Sign Up

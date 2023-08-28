@@ -1,115 +1,16 @@
-import Navbar from "../Components/navbar";
-import "./login.css";
-import Footer from "../Components/footer";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
-const Login = () => {
-  const [login, setLogin] = useState(true);
-  const [signUp, setSignUp] = useState(false);
 
-  const handleShowLogin = () => {
-    setLogin(true);
-    setSignUp(false);
-  };
-  const handleShowSignUp = () => {
-    setLogin(false);
-    setSignUp(true);
-  };
-  const navigate = useNavigate();
-  const handlegotodash = () => {
-    navigate("/dashboard");
-  };
-  return (
-    <div>
-      <Navbar />
 
-      {login && (
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4"></div>
+const SignUp = () => {
+    const navigate = useNavigate();
+const handleShowLogin = () => {
+    navigate("/login")
+}
+    return(
+        <div>
 
-            <div className="col-md-4 mt-5">
-              <form>
-                <h1 className="text-center">Welcome To WDC</h1>
-                <div className="mb-4">
-                  <label htmlFor="emailaddress">Email </label>
-                  <input
-                    type="email"
-                    id="emailaddress"
-                    placeholder="Example@gmail.com"
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="psw">Password</label>
-                  <input
-                    type="password"
-                    id="psw"
-                    placeholder="*******"
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div>
-                  <p>
-                    Don't have an email? Create one{" "}
-                    <a
-                      href="https://www.gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      here
-                    </a>
-                  </p>
-                </div>
-                <div className="row mb-4">
-                  <div className="col d-flex justify-content-center">
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="form2Example31"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="form2Example31"
-                      >
-                        {" "}
-                        Remember me{" "}
-                      </label>
-                    </div>
-                  </div>
-
-                  <div className="col">
-                    <a href="/">Forgot password?</a>
-                  </div>
-                </div>
-                <button
-                  className="btn btn-primary btn-block form-control"
-                  onClick={handlegotodash}
-                >
-                  Login
-                </button>
-                <div className="text-center mt-4">
-                  <p>
-                    Don't have an account?{" "}
-                    <a href="#!" onClick={handleShowSignUp}>
-                      Register
-                    </a>
-                  </p>
-                </div>
-              </form>
-            </div>
-
-            <div className="col-md-4"></div>
-          </div>
-        </div>
-      )}
-
-      {signUp && (
         <div className="container mt-5">
           <div className="row">
             <div className="col-md-4"></div>
@@ -221,9 +122,8 @@ const Login = () => {
             <div className="col-md-4"></div>
           </div>
         </div>
-      )}
-      <Footer />
-    </div>
-  );
-};
-export default Login;
+    
+        </div>
+    )
+}
+export default SignUp;

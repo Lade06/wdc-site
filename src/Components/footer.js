@@ -64,7 +64,7 @@ const Footer = () => {
     
     </div>
    
-    <div className="text-center p-2 bg-primary mt-2" >
+    <div className="text-center p-2 bg-primary " >
      
       <p>  © 2023 Copyright Women Development Centre</p>
     </div>

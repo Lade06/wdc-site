@@ -19,7 +19,7 @@ const DashBoard = () => {
                 <p >
                   Name: <b>Ayomide Ayomide</b> <br />
                   Student No: LASG/WDC/CTO/22/23 <br />
-                  Grade:
+                  Grade: B
                 </p>
                 
           </div>

@@ -16,7 +16,7 @@ const DashBoard = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="text-center mt-5">Dashboard</h1>
+            <h1 className="text-center mt-5">Student Dashboard</h1>
           </div>
         </div>
         <div className="row bg-primary p-2 text-light  mt-3 ">
@@ -63,10 +63,10 @@ const DashBoard = () => {
             <div className="custom-box">Department Gallery</div>
           </div>
           <div className="col-md-6 col-lg-3">
-            <div className="custom-box">Make Complaint</div>
+            <div className="custom-box">Topics</div>
           </div>
           <div className="col-md-6 col-lg-3">
-            <div className="custom-box">News</div>
+            <div className="custom-box">Assignments</div>
           </div>
         </div>
 
@@ -77,6 +77,26 @@ const DashBoard = () => {
           <div className="col-md-6 col-lg-3">
             <div className="custom-box">Monthly Dues</div>
           </div>
+          <div className="col-md-6 col-lg-3">
+            <div className="custom-box">Attendance</div>
+          </div>
+          <div className="col-md-6 col-lg-3">
+            <div className="custom-box">Timetable</div>
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-md-6 col-lg-3">
+            <div className="custom-box">Make Complaint</div>
+          </div>
+          <div className="col-md-6 col-lg-3">
+            <div className="custom-box">Announcement</div>
+          </div>
+          {/* <div className="col-md-6 col-lg-3">
+            <div className="custom-box">Make Complaint</div>
+          </div>
+          <div className="col-md-6 col-lg-3">
+            <div className="custom-box">News</div>
+          </div> */}
         </div>
         <div className="row">
           <div className="col-md-12">

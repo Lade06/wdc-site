@@ -83,6 +83,21 @@ const Navbar = () => {
                       Textile
                     </a>
                   </li>
+                  <li>
+                    <a className="dropdown-item" href="/">
+                      Barbing
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/">
+                      Adult Literacy
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/">
+                    Hair Dressing
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li className="nav-item">

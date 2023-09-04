@@ -79,47 +79,47 @@ const Navbar = () => {
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <span className="dropdown-item  "  onClick={handleShowComputer}>
+                    <span className="dropdown-item"  onClick={handleShowComputer}>
                       Computer
                     </span>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="catering" onClick={handleShowCatering}>
+                    <span className="dropdown-item" onClick={handleShowCatering}>
                       Catering
-                    </a>
+                    </span>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="photography" onClick={handleShowPhotography}>
+                    <span className="dropdown-item"  onClick={handleShowPhotography}>
                       Photography
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="fashion" onClick={handleShowFashion}>
+                    <span className="dropdown-item" onClick={handleShowFashion}>
                       Fashion
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="textile" onClick={handleShowTextile}>
+                    <span className="dropdown-item" onClick={handleShowTextile}>
                       Textile
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="barbing" onClick={handleShowBarbing}>
+                    <span className="dropdown-item" onClick={handleShowBarbing}>
                       Barbing
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="adultliteracy" onClick={handleShowAdultliteracy}>
+                    <span className="dropdown-item" onClick={handleShowAdultliteracy}>
                       Adult Literacy
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="hairdressing" onClick={handleShowHairdressing}>
+                    <span className="dropdown-item" onClick={handleShowHairdressing}>
                     Hair Dressing
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </li>

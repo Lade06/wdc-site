@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
 // import student1 from "../Assets/student.jpg";
 
 const DashBoard = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleShowHomePage = () => {
-    navigate("/home")
-  }
+    navigate("/home");
+  };
   return (
     <div>
       <div className="container">
@@ -19,7 +19,7 @@ const DashBoard = () => {
             <h1 className="text-center mt-5">Student Dashboard</h1>
           </div>
         </div>
-        <div className="row bg-primary p-2 text-light  mt-3 ">
+        <div className="row bg-primary p-2 text-light  mt-3 dashNav">
           <div className="col-md-6">
             <h3 className="mt-5">Welcome back, Ayomide</h3>
           </div>
@@ -98,9 +98,14 @@ const DashBoard = () => {
             <div className="custom-box">News</div>
           </div> */}
         </div>
-        <div className="row">
+        <div className="row mb-5">
           <div className="col-md-12">
-            <button className="btn btn-info mt-5 mx-3" onClick={handleShowHomePage}>Logout</button>
+            <button
+              className="btn btn-info mt-5 mx-3"
+              onClick={handleShowHomePage}
+            >
+              Logout
+            </button>
           </div>
         </div>
 

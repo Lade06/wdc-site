@@ -79,9 +79,9 @@ const Navbar = () => {
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item  " href="computer" onClick={handleShowComputer}>
+                    <span className="dropdown-item  "  onClick={handleShowComputer}>
                       Computer
-                    </a>
+                    </span>
                   </li>
                   <li>
                     <a className="dropdown-item" href="catering" onClick={handleShowCatering}>

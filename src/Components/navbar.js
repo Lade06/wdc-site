@@ -16,7 +16,25 @@ const Navbar = () => {
         navigate('/computer')
       }
     const handleShowHairdressing = () => {
-        navigate('/computer')
+        navigate('/hairdressing')
+      }
+    const handleShowFashion = () => {
+        navigate('/fashion')
+      }
+    const handleShowPhotography = () => {
+        navigate('/photography')
+      }
+    const handleShowCatering = () => {
+        navigate('/catering')
+      }
+    const handleShowTextile = () => {
+        navigate('/textile')
+      }
+    const handleShowBarbing = () => {
+        navigate('/barbing')
+      }
+    const handleShowAdultliteracy = () => {
+        navigate('/barbing')
       }
   return (
     <div>
@@ -66,7 +84,7 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="catering" onClick={handleShowCatering}>
                       Catering
                     </a>
                   </li>
@@ -74,27 +92,27 @@ const Navbar = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="photography" onClick={handleShowPhotography}>
                       Photography
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="fashion" onClick={handleShowFashion}>
                       Fashion
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="textile" onClick={handleShowTextile}>
                       Textile
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="barbing" onClick={handleShowBarbing}>
                       Barbing
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="adultliteracy" onClick={handleShowAdultliteracy}>
                       Adult Literacy
                     </a>
                   </li>

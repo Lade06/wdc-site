@@ -12,7 +12,12 @@ const Navbar = () => {
     const handleShowSignUp = () => {
         navigate('/signup')
     }  
-    
+    const handleShowComputer = () => {
+        navigate('/computer')
+      }
+    const handleShowHairdressing = () => {
+        navigate('/computer')
+      }
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,7 +61,7 @@ const Navbar = () => {
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item  " href="/">
+                    <a className="dropdown-item  " href="computer" onClick={handleShowComputer}>
                       Computer
                     </a>
                   </li>
@@ -94,7 +99,7 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <a className="dropdown-item" href="hairdressing" onClick={handleShowHairdressing}>
                     Hair Dressing
                     </a>
                   </li>

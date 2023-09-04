@@ -5,8 +5,13 @@ import hair from "../Assets/hair.jpeg";
 // import laglogo from "../Assets/lagos-logo.png";
 import Navbar from "../Components/navbar";
 import Footer from "../Components/footer";
+// import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  // const navigate = useNavigate()
+  // const handleShowComputer = () => {
+  //   navigate('/computer')
+  // }
   return (
     <div>
         <Navbar />

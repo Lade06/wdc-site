@@ -2,10 +2,33 @@
     background-color: rgb(137, 137, 180);  
     padding: 25px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     margin: 10px;
     color: white;
-    border-radius: 1em;
+    /* border-radius: 10px; */
+    height: 8em;
+    display: flex;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+   
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    cursor: pointer;
  
+}
+
+.custom-box:hover{
+    transform: translateY(-10px);
+    background-color: rgb(13, 145, 240);
+    
+
+}
+
+
+.dashNav{
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
 }
 
 

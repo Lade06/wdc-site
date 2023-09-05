@@ -1,0 +1,10 @@
+.background-image{
+    width: 350px;
+    /* height: ; */
+    background-image: url(../Assets/code.jpeg);
+    background-repeat: no-repeat;
+
+}
+.click-here{
+    color: blue;
+}

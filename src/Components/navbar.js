@@ -13,28 +13,28 @@ const Navbar = () => {
         navigate('/signup')
     }  
     const handleShowComputer = () => {
-        navigate('/computer')
+        navigate('/courses')
       }
     const handleShowHairdressing = () => {
-        navigate('/hairdressing')
+        navigate('/courses')
       }
     const handleShowFashion = () => {
-        navigate('/fashion')
+        navigate('/courses')
       }
     const handleShowPhotography = () => {
-        navigate('/photography')
+        navigate('/courses')
       }
     const handleShowCatering = () => {
-        navigate('/catering')
+        navigate('/courses')
       }
     const handleShowTextile = () => {
-        navigate('/textile')
+        navigate('/courses')
       }
     const handleShowBarbing = () => {
-        navigate('/barbing')
+        navigate('/courses')
       }
     const handleShowAdultliteracy = () => {
-        navigate('/barbing')
+        navigate('/courses')
       }
   return (
     <div>
@@ -74,7 +74,7 @@ const Navbar = () => {
                   data-mdb-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Department
+                Courses
                 </a>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">

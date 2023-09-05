@@ -1,10 +1,19 @@
 .background-image{
-    width: 350px;
-    /* height: ; */
-    background-image: url(../Assets/code.jpeg);
+    width: 100%;
+    height: 450px;
+    background-image: url(../Assets/skills.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.word-image{
+    padding-top: 6em;
+   
 }
 .click-here{
     color: blue;
+}
+.click-here:hover{
+    color: red;
+    cursor: pointer;
 }

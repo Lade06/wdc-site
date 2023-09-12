@@ -9,15 +9,8 @@ import catering from "../Assets/cook1.jpeg";
 import sewing from "../Assets/sew1.jpeg";
 import photography from "../Assets/photo1.jpeg";
 import textile from "../Assets/textile4.jpeg";
-import { useNavigate } from "react-router-dom";
-//  import adult from "../Assets/adult1.jpeg"
 
 const Courses = () => {
-  const navigate = useNavigate()
-  const handleShowModal = () => {
-  navigate('/modal')
-  }
-
   return (
     <div>
       <div className="container-fluid background-image">
@@ -56,7 +49,7 @@ const Courses = () => {
               </big>
               <p>
                 Read more about the course{" "}
-                <span className="click-here" onClick={handleShowModal}>here</span>
+                <span className="click-here">here</span>
               </p>
             </div>
           </div>
@@ -150,7 +143,6 @@ const Courses = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

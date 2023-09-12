@@ -5,7 +5,6 @@ import Login from "./pages/login";
 import DashBoard from "./pages/dashBoard";
 import SignUp from "./pages/signup";
 import Courses from "./pages/courses";
-import Modal from "./Components/modal";
 
 function App() {
   return (
@@ -19,12 +18,8 @@ function App() {
           <Route path="signup" element={<SignUp />} />
           <Route path="home" element={<Home />} />
           <Route path="courses" element={<Courses />} />
-          <Route path="modal" element={<Modal />} />
-
         </Routes>
       </BrowserRouter>
-
-    
     </div>
   );
 }
